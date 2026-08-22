@@ -152,7 +152,9 @@ select {
 
     white-space: nowrap;
 }
-
+/* .blue{
+    color: blue;
+} */
 .login-btn {
     background: white;
 
