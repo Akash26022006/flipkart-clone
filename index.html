@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flipkart Clone</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-left">
+
+        <a href="index.html" class="flipkart-logo">
+
+            <span class="logo-main">
+                Flipkart
+            </span>
+
+            <span class="logo-sub">
+                Explore
+                <strong>Plus</strong>
+                <i class="fa-solid fa-star"></i>
+            </span>
+
+        </a>
+
+
+        <div class="search-container">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search for Products, Brands and More"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="nav-right">
+
+        <a href="login.html" class="login-button">
+            Login
+        </a>
+
+
+        <a href="#" class="nav-link">
+            Become a Seller
+        </a>
+
+
+        <a href="#" class="nav-link more-menu">
+
+            More
+
+            <i class="fa-solid fa-angle-down"></i>
+
+        </a>
+
+
+        <a href="cart.html" class="cart-link">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CATEGORY NAVIGATION
+===================================================== -->
+
+<section class="category-section">
+
+    <div class="category-container">
+
+
+        <!-- Grocery -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon grocery-icon">
+
+                <!-- <i class="fa-solid fa-basket-shopping"></i> -->
+                 <img src="./source/all.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+                All
+            </span>
+
+        </a>
+
+
+
+        <!-- Mobiles -->
+
+        <a href="category.html" class="category-item">
+
+            <div class="category-icon mobile-icon">
+
+                <img src="./source/mobiles.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+                Mobiles
+            </span>
+
+        </a>
+
+
+
+        <!-- Fashion -->
+
+        <a href="./fashion.html" class="category-item">
+
+            <div class="category-icon fashion-icon">
+
+                <!-- <i class="fa-solid fa-shirt"></i> -->
+                 <img src="./source/fashion.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Fashion
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </span>
+
+        </a>
+
+
+
+        <!-- Electronics -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon electronics-icon">
+
+                <!-- <i class="fa-solid fa-headphones"></i> -->
+                 <img src="./source/electronics.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Electronics
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </span>
+
+        </a>
+
+
+
+        <!-- Home -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon home-icon">
+
+                <!-- <i class="fa-solid fa-couch"></i> -->
+                 <img src="./source/furniture.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Home & Furniture
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </span>
+
+        </a>
+
+
+
+        <!-- Appliances -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon appliance-icon">
+
+                <!-- <i class="fa-solid fa-tv"></i> -->
+                 <img src="./source/tv.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Appliances
+
+            </span>
+
+        </a>
+
+
+
+        <!-- Travel -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon travel-icon">
+
+                <!-- <i class="fa-solid fa-plane"></i> -->
+                 <img src="./source/books.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+                Flight Bookings
+            </span>
+
+        </a>
+
+
+
+        <!-- Beauty -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon beauty-icon">
+
+                <!-- <i class="fa-solid fa-spray-can-sparkles"></i> -->
+                 <img src="./source/toy.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Beauty, Toys & More
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </span>
+
+        </a>
+
+
+
+        <!-- Two Wheelers -->
+
+        <a href="#" class="category-item">
+
+            <div class="category-icon bike-icon">
+
+                <!-- <i class="fa-solid fa-motorcycle"></i> -->
+                 <img src="./source/auto-new.svg" style="height: 40px;">
+
+            </div>
+
+            <span style="margin-top: 12px;">
+
+                Two Wheelers
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </span>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+
+
+<!-- =====================================================
+     HERO BANNER
+===================================================== -->
+
+<section class="hero-section">
+
+    <div class="banner-slider">
+
+        <a href="#" class="banner-slide">
+            <img src="./source/c1f4644ea8d50670.webp" alt="Banner 1">
+        </a>
+
+        <a href="#" class="banner-slide">
+            <img src="./source/a72a8443f83f39b8.webp" alt="Banner 2">
+        </a>
+
+        <a href="#" class="banner-slide">
+            <img src="./source/d336bf0029d22522.webp" alt="Banner 3">
+        </a>
+
+        <a href="#" class="banner-slide">
+            <img src="./source/c1f4644ea8d50670.webp" alt="Banner 4">
+        </a>
+
+        <a href="#" class="banner-slide">
+            <img src="./source/d336bf0029d22522.webp" alt="Banner 5">
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BEST OF ELECTRONICS
+===================================================== -->
+
+<section class="product-section">
+
+
+    <div class="section-heading">
+
+        <h2>
+            Best of Electronics
+        </h2>
+
+
+        <a href="category.html" class="view-all">
+
+            VIEW ALL
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+    </div>
+
+
+
+    <div class="product-slider">
+
+
+        <!-- PRODUCT 1 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/mob2.jpg"
+                    alt="Mobile"
+                >
+
+            </div>
+
+            <h3>
+                Smartphones
+            </h3>
+
+            <p class="product-offer">
+                From ₹9,999
+            </p>
+
+            <p class="product-brand">
+                Samsung, Motorola & more
+            </p>
+
+        </a>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/laptop 1.jpg"
+                    alt="Laptop"
+                >
+
+            </div>
+
+            <h3>
+                Laptops
+            </h3>
+
+            <p class="product-offer">
+                From ₹29,990
+            </p>
+
+            <p class="product-brand">
+                HP, Lenovo & more
+            </p>
+
+        </a>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/wireless2.jpg"
+                    alt="Headphones"
+                >
+
+            </div>
+
+            <h3>
+                Wireless Headphones
+            </h3>
+
+            <p class="product-offer">
+                From ₹799
+            </p>
+
+            <p class="product-brand">
+                boAt, JBL & more
+            </p>
+
+        </a>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/smart watch.jpg"
+                    alt="Smart Watch"
+                >
+
+            </div>
+
+            <h3>
+                Smart Watches
+            </h3>
+
+            <p class="product-offer">
+                From ₹999
+            </p>
+
+            <p class="product-brand">
+                Noise, Fire-Boltt & more
+            </p>
+
+        </a>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/tablet.jpg"
+                    alt="Tablet"
+                >
+
+            </div>
+
+            <h3>
+                Tablets
+            </h3>
+
+            <p class="product-offer">
+                From ₹12,999
+            </p>
+
+            <p class="product-brand">
+                Samsung & more
+            </p>
+
+        </a>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/cameraaaa.jpg"
+                    alt="Camera"
+                >
+
+            </div>
+
+            <h3>
+                Cameras
+            </h3>
+
+            <p class="product-offer">
+                From ₹39,999
+            </p>
+
+            <p class="product-brand">
+                Canon, Sony & more
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     BEAUTY / TOYS
+===================================================== -->
+
+<section class="product-section">
+
+
+    <div class="section-heading">
+
+        <h2>
+            Beauty, Food, Toys & More
+        </h2>
+
+
+        <a href="category.html" class="view-all">
+
+            VIEW ALL
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+    </div>
+
+
+
+    <div class="product-slider">
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/perfume.jpg"
+                    alt="Perfume"
+                >
+
+            </div>
+
+            <h3>
+                Perfumes
+            </h3>
+
+            <p class="product-offer">
+                Min. 50% Off
+            </p>
+
+            <p class="product-brand">
+                Top Brands
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/shoe.jpg"
+                    alt="Shoes"
+                >
+
+            </div>
+
+            <h3>
+                Sports Shoes
+            </h3>
+
+            <p class="product-offer">
+                From ₹599
+            </p>
+
+            <p class="product-brand">
+                Puma, Adidas & more
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/toys.jpg"
+                    alt="Toys"
+                >
+
+            </div>
+
+            <h3>
+                Toys
+            </h3>
+
+            <p class="product-offer">
+                Up to 70% Off
+            </p>
+
+            <p class="product-brand">
+                Best Sellers
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/makup.jpg"
+                    alt="Makeup"
+                >
+
+            </div>
+
+            <h3>
+                Makeup
+            </h3>
+
+            <p class="product-offer">
+                From ₹199
+            </p>
+
+            <p class="product-brand">
+                Top Brands
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/cycle.jpg"
+                    alt="Cycle"
+                >
+
+            </div>
+
+            <h3>
+                Cycles
+            </h3>
+
+            <p class="product-offer">
+                From ₹3,999
+            </p>
+
+            <p class="product-brand">
+                Hero & more
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/gym.jpg"
+                    alt="Gym Equipment"
+                >
+
+            </div>
+
+            <h3>
+                Gym Equipment
+            </h3>
+
+            <p class="product-offer">
+                Up to 60% Off
+            </p>
+
+            <p class="product-brand">
+                Fitness Products
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TOP DEALS
+===================================================== -->
+
+<section class="product-section">
+
+
+    <div class="section-heading">
+
+        <h2>
+            Top Deals
+        </h2>
+
+
+        <a href="category.html" class="view-all">
+
+            VIEW ALL
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+    </div>
+
+
+
+    <div class="product-slider">
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/tv.jpg"
+                    alt="Television"
+                >
+
+            </div>
+
+            <h3>
+                Smart TVs
+            </h3>
+
+            <p class="product-offer">
+                From ₹11,999
+            </p>
+
+            <p class="product-brand">
+                Best Selling TVs
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/refregitor.jpg"
+                    alt="Refrigerator"
+                >
+
+            </div>
+
+            <h3>
+                Refrigerators
+            </h3>
+
+            <p class="product-offer">
+                From ₹18,999
+            </p>
+
+            <p class="product-brand">
+                LG, Samsung & more
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/washing.jpg"
+                    alt="Washing Machine"
+                >
+
+            </div>
+
+            <h3>
+                Washing Machines
+            </h3>
+
+            <p class="product-offer">
+                From ₹12,490
+            </p>
+
+            <p class="product-brand">
+                Top Load & Front Load
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/aircondition.jpg"
+                    alt="Air Conditioner"
+                >
+
+            </div>
+
+            <h3>
+                Air Conditioners
+            </h3>
+
+            <p class="product-offer">
+                From ₹29,999
+            </p>
+
+            <p class="product-brand">
+                Inverter AC
+            </p>
+
+        </a>
+
+
+
+        <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/earbuds.jpg"
+                    alt="Earbuds"
+                >
+
+            </div>
+
+            <h3>
+                True Wireless
+            </h3>
+
+            <p class="product-offer">
+                From ₹899
+            </p>
+
+            <p class="product-brand">
+                boAt, Realme & more
+            </p>
+
+        </a>
+           <a href="product.html" class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="./source/tower.jpg"
+                    alt="Earbuds"
+                >
+
+            </div>
+
+            <h3>
+                Automatic
+            </h3>
+
+            <p class="product-offer">
+                From ₹899
+            </p>
+
+            <p class="product-brand">
+                Tower Fan, Usha & more
+            </p>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     THREE BANNER SECTION
+===================================================== -->
+
+<section class="three-banner-section">
+
+
+    <a href="#" class="small-banner">
+
+        <img
+            src="./source/d336bf0029d22522.webp"
+            alt="Offer"
+        >
+
+    </a>
+
+
+    <a href="#" class="small-banner">
+
+        <img
+            src="./source/62e33184d158868b.webp"
+            alt="Offer"
+        >
+
+    </a>
+
+
+    <a href="#" class="small-banner">
+
+        <img
+            src="./source/a72a8443f83f39b8.webp"
+            alt="Offer"
+        >
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FLIPKART INFORMATION
+===================================================== -->
+
+<!-- <section class="information-section">
+
+    <h2>
+        Flipkart Clone – Online Shopping
+    </h2>
+
+
+    <p>
+
+        This ecommerce website is designed as a
+        Flipkart-style shopping interface with
+        categories, products, offers and shopping
+        sections. Browse mobiles, electronics,
+        fashion, home appliances and more.
+
+    </p>
+
+
+    <h3>
+        Shop Online with Great Deals
+    </h3>
+
+
+    <p>
+
+        Explore products from different categories
+        and discover exciting offers and discounts.
+        The website provides a responsive shopping
+        experience across desktop, tablet and mobile
+        devices.
+
+    </p>
+
+</section> -->
+
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-top">
+
+
+        <div class="footer-column">
+
+            <h3>
+                ABOUT
+            </h3>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Flipkart Stories
+            </a>
+
+            <a href="#">
+                Press
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>
+                GROUP COMPANIES
+            </h3>
+
+            <a href="#">
+                Myntra
+            </a>
+
+            <a href="#">
+                Cleartrip
+            </a>
+
+            <a href="#">
+                Shopsy
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>
+                HELP
+            </h3>
+
+            <a href="#">
+                Payments
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Cancellation & Returns
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>
+                CONSUMER POLICY
+            </h3>
+
+            <a href="#">
+                Cancellation & Returns
+            </a>
+
+            <a href="#">
+                Terms Of Use
+            </a>
+
+            <a href="#">
+                Security
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Sitemap
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column address-column">
+
+            <h3>
+                Mail Us:
+            </h3>
+
+            <p>
+                Flipkart Clone Project
+            </p>
+
+            <p>
+                Chennai, Tamil Nadu
+            </p>
+
+            <p>
+                India
+            </p>
+
+
+            <h3 class="social-title">
+                Social
+            </h3>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <span>
+            <i class="fa-solid fa-store"></i>
+            Become a Seller
+        </span>
+
+        <span>
+            <i class="fa-solid fa-star"></i>
+            Advertise
+        </span>
+
+        <span>
+            <i class="fa-solid fa-gift"></i>
+            Gift Cards
+        </span>
+
+        <span>
+            <i class="fa-solid fa-circle-question"></i>
+            Help Center
+        </span>
+
+        <span>
+            © 2026 Flipkart Clone
+        </span>
+
+    </div>
+
+
+</footer>
+
+
+</body>
+
+</html>

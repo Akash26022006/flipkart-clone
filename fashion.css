@@ -1,0 +1,602 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f3f6;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    width: 100%;
+    height: 64px;
+    background: #2874f0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 110px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-size: 23px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.logo small {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.logo small b,
+.logo small i {
+    color: #ffe500;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    flex: 1;
+    max-width: 600px;
+    height: 40px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 2px;
+}
+
+.search-box i {
+    color: #2874f0;
+    padding: 0 14px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.login-btn {
+    background: white;
+    color: #2874f0 !important;
+
+    padding: 10px 30px;
+    font-weight: 600 !important;
+}
+
+
+/* ================================
+   BREADCRUMB
+================================ */
+
+.breadcrumb {
+    max-width: 1400px;
+    width: calc(100% - 20px);
+
+    margin: auto;
+
+    padding: 12px 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12px;
+    color: #878787;
+}
+
+.breadcrumb a:hover {
+    color: #2874f0;
+}
+
+
+/* ================================
+   MAIN PAGE
+================================ */
+
+.fashion-page {
+    max-width: 1400px;
+    width: calc(100% - 20px);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 245px 1fr;
+
+    gap: 10px;
+}
+
+
+/* ================================
+   FILTER BOX
+================================ */
+
+.filter-box {
+    background: white;
+
+    position: sticky;
+    top: 74px;
+
+    align-self: start;
+}
+
+.filter-box > h2 {
+    padding: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section {
+    padding: 20px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section h3 {
+    font-size: 13px;
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+.filter-section a {
+    display: block;
+
+    font-size: 13px;
+    color: #555;
+
+    margin-bottom: 13px;
+}
+
+.filter-section a:hover {
+    color: #2874f0;
+}
+
+.filter-section label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+    color: #555;
+
+    margin-bottom: 13px;
+
+    cursor: pointer;
+}
+
+.filter-section input {
+    width: 15px;
+    height: 15px;
+
+    accent-color: #2874f0;
+}
+
+
+/* ================================
+   PRODUCTS SECTION
+================================ */
+
+.products-section {
+    background: white;
+}
+
+
+/* HEADER */
+
+.products-header {
+    min-height: 75px;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eee;
+}
+
+.products-header h1 {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+.products-header p {
+    font-size: 12px;
+    color: #878787;
+}
+
+
+/* SORT */
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-box span {
+    font-size: 13px;
+    color: #878787;
+}
+
+.sort-box select {
+    height: 36px;
+    min-width: 160px;
+
+    border: 1px solid #ddd;
+
+    padding: 0 10px;
+
+    outline: none;
+
+    background: white;
+}
+
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+
+/* ================================
+   PRODUCT CARD
+================================ */
+
+.product-card {
+    padding: 18px;
+
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-bottom: 15px;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
+/* WISHLIST */
+
+.wishlist {
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+
+    width: 32px;
+    height: 32px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #777;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+
+    z-index: 5;
+}
+
+.wishlist:hover {
+    color: red;
+}
+
+
+/* ================================
+   PRODUCT INFO
+================================ */
+
+.product-info h2 {
+    font-size: 13px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    margin-bottom: 8px;
+}
+
+
+/* RATING */
+
+.rating {
+    display: inline-block;
+
+    background: #388e3c;
+
+    color: white;
+
+    padding: 4px 7px;
+
+    border-radius: 3px;
+
+    font-size: 10px;
+
+    margin-bottom: 10px;
+}
+
+.rating span {
+    margin-left: 5px;
+}
+
+
+/* PRICE */
+
+.product-info strong {
+    font-size: 17px;
+    margin-right: 7px;
+}
+
+.product-info del {
+    color: #878787;
+    font-size: 11px;
+}
+
+.discount {
+    color: #388e3c;
+
+    font-size: 11px;
+
+    margin-left: 5px;
+}
+
+.extra {
+    color: #388e3c;
+
+    font-size: 11px;
+
+    margin-top: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+
+    .products-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .fashion-page {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .filter-section {
+        padding: 15px;
+    }
+
+    .filter-box > h2 {
+        padding: 15px;
+    }
+
+    .product-image {
+        height: 210px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+
+        min-height: 110px;
+
+        padding: 10px 12px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .search-box {
+        order: 3;
+
+        flex-basis: 100%;
+    }
+
+    .nav-links {
+        margin-left: auto;
+    }
+
+    .nav-links a:not(.login-btn):not(:last-child) {
+        display: none;
+    }
+
+
+    /* REMOVE FILTER ON MOBILE */
+
+    .fashion-page {
+        display: block;
+        width: 100%;
+    }
+
+    .filter-box {
+        display: none;
+    }
+
+
+    /* 2 PRODUCTS */
+
+    .products-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .products-header {
+        padding: 12px;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-info strong {
+        font-size: 15px;
+    }
+
+    .discount {
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .product-image {
+        height: 165px;
+    }
+
+    .product-info h2 {
+        font-size: 11px;
+    }
+
+    .product-info del {
+        display: none;
+    }
+
+    .extra {
+        font-size: 9px;
+    }
+}

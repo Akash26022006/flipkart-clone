@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - Flipkart Clone</title>
+
+    <link rel="stylesheet"
+        href="cart.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+
+    <a href="index.html" class="logo">
+
+        <span>Flipkart</span>
+
+        <small>
+            Explore
+            <b>Plus</b>
+            <i class="fa-solid fa-star"></i>
+        </small>
+
+    </a>
+
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Search for Products, Brands and More">
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="login.html"
+           class="login-btn">
+            Login
+        </a>
+
+        <a href="#">
+            Become a Seller
+        </a>
+
+        <a href="#">
+            More
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+
+        <a href="cart.html"
+           class="cart-link">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     BREADCRUMB
+===================================================== -->
+
+<div class="breadcrumb">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <i class="fa-solid fa-angle-right"></i>
+
+    <span>
+        My Cart
+    </span>
+
+</div>
+
+
+
+<!-- =====================================================
+     CART PAGE
+===================================================== -->
+
+<main class="cart-page">
+
+
+    <!-- =================================================
+         LEFT CART
+    ================================================= -->
+
+    <section class="cart-left">
+
+
+        <!-- CART HEADER -->
+
+        <div class="cart-header">
+
+            <h1>
+                My Cart
+            </h1>
+
+            <span>
+                2 Items
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCT 1
+        ================================================= -->
+
+        <div class="cart-product">
+
+
+            <!-- IMAGE -->
+
+            <div class="cart-image">
+
+                <img
+                    src="./source/samsung.1.jpg"
+                    alt="Samsung Galaxy S24">
+
+            </div>
+
+
+
+            <!-- DETAILS -->
+
+            <div class="cart-details">
+
+
+                <h2>
+                    Samsung Galaxy S24 5G
+                    (Onyx Black, 128 GB)
+                </h2>
+
+
+                <p class="seller">
+                    Seller: SuperComNet
+                </p>
+
+
+                <div class="cart-price">
+
+                    <strong>
+                        ₹49,999
+                    </strong>
+
+                    <del>
+                        ₹74,999
+                    </del>
+
+                    <span>
+                        33% Off
+                    </span>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="quantity-row">
+
+
+                    <button class="quantity-btn">
+                        -
+                    </button>
+
+
+                    <span class="quantity">
+                        1
+                    </span>
+
+
+                    <button class="quantity-btn">
+                        +
+                    </button>
+
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="cart-actions">
+
+                    <button>
+                        SAVE FOR LATER
+                    </button>
+
+                    <button>
+                        REMOVE
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- DELIVERY -->
+
+            <div class="delivery">
+
+                <p>
+                    Delivery by
+                    <b>26 Aug, Wednesday</b>
+                </p>
+
+                <span>
+                    Free Delivery
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCT 2
+        ================================================= -->
+
+        <div class="cart-product">
+
+
+            <div class="cart-image">
+
+                <img
+                    src="./source/samsung.2.jpg"
+                    alt="Smartphone">
+
+            </div>
+
+
+
+            <div class="cart-details">
+
+
+                <h2>
+                    Samsung Galaxy A55 5G
+                    (Awesome Navy, 128 GB)
+                </h2>
+
+
+                <p class="seller">
+                    Seller: RetailNet
+                </p>
+
+
+                <div class="cart-price">
+
+                    <strong>
+                        ₹32,999
+                    </strong>
+
+                    <del>
+                        ₹39,999
+                    </del>
+
+                    <span>
+                        17% Off
+                    </span>
+
+                </div>
+
+
+                <div class="quantity-row">
+
+                    <button class="quantity-btn">
+                        -
+                    </button>
+
+                    <span class="quantity">
+                        1
+                    </span>
+
+                    <button class="quantity-btn">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="cart-actions">
+
+                    <button>
+                        SAVE FOR LATER
+                    </button>
+
+                    <button>
+                        REMOVE
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="delivery">
+
+                <p>
+                    Delivery by
+                    <b>27 Aug, Thursday</b>
+                </p>
+
+                <span>
+                    Free Delivery
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PLACE ORDER -->
+
+        <div class="place-order-box">
+
+            <button class="place-order">
+
+                PLACE ORDER
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         RIGHT PRICE DETAILS
+    ================================================= -->
+
+    <aside class="price-details">
+
+
+        <div class="price-heading">
+
+            <h2>
+                PRICE DETAILS
+            </h2>
+
+        </div>
+
+
+
+        <div class="price-content">
+
+
+            <div class="price-row">
+
+                <span>
+                    Price (2 items)
+                </span>
+
+                <b>
+                    ₹1,14,998
+                </b>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    Discount
+                </span>
+
+                <b class="green">
+                    - ₹31,999
+                </b>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    Delivery Charges
+                </span>
+
+                <b class="green">
+                    Free
+                </b>
+
+            </div>
+
+
+            <div class="price-row">
+
+                <span>
+                    Secured Packaging Fee
+                </span>
+
+                <b>
+                    ₹98
+                </b>
+
+            </div>
+
+
+
+            <div class="total-row">
+
+                <span>
+                    Total Amount
+                </span>
+
+                <strong>
+                    ₹83,097
+                </strong>
+
+            </div>
+
+
+
+            <p class="saving">
+
+                You will save ₹31,901 on this order
+
+            </p>
+
+
+        </div>
+
+
+    </aside>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     SAFE PAYMENT
+===================================================== -->
+
+<section class="safe-payment">
+
+
+    <i class="fa-solid fa-shield-halved"></i>
+
+
+    <div>
+
+        <h3>
+            Safe and Secure Payments
+        </h3>
+
+        <p>
+            100% authentic products and secure
+            payment experience.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-inner">
+
+
+        <div>
+
+            <h3>
+                ABOUT
+            </h3>
+
+            <a href="#">
+                Contact Us
+            </a>
+
+            <a href="#">
+                About Us
+            </a>
+
+            <a href="#">
+                Careers
+            </a>
+
+            <a href="#">
+                Flipkart Stories
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                HELP
+            </h3>
+
+            <a href="#">
+                Payments
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Cancellation & Returns
+            </a>
+
+            <a href="#">
+                FAQ
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                POLICY
+            </h3>
+
+            <a href="#">
+                Terms Of Use
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+
+            <a href="#">
+                Security
+            </a>
+
+            <a href="#">
+                Sitemap
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                SOCIAL
+            </h3>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Flipkart Clone
+
+    </div>
+
+
+</footer>
+
+
+</body>
+
+</html>

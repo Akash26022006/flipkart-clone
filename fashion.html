@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashion - Flipkart Clone</title>
+
+    <link rel="stylesheet" href="./fashion.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>Flipkart</span>
+            <small>
+                Explore <b>Plus</b>
+                <i class="fa-solid fa-star"></i>
+            </small>
+        </a>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                placeholder="Search for Products, Brands and More">
+        </div>
+
+        <div class="nav-links">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="#">
+                Become a Seller
+            </a>
+
+            <a href="#">
+                More
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- BREADCRUMB -->
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+
+        <i class="fa-solid fa-angle-right"></i>
+
+        <span>Fashion</span>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="fashion-page">
+
+
+        <!-- FILTER -->
+
+        <aside class="filter-box">
+
+            <h2>Filters</h2>
+
+            <div class="filter-section">
+
+                <h3>Categories</h3>
+
+                <a href="#">Men's Clothing</a>
+                <a href="#">Women's Clothing</a>
+                <a href="#">Footwear</a>
+                <a href="#">Watches</a>
+                <a href="#">Bags</a>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>Price</h3>
+
+                <label>
+                    <input type="checkbox">
+                    Under ₹500
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ₹500 - ₹1,000
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ₹1,000 - ₹2,000
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Above ₹2,000
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>Gender</h3>
+
+                <label>
+                    <input type="checkbox">
+                    Men
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Women
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Kids
+                </label>
+
+            </div>
+
+
+            <div class="filter-section">
+
+                <h3>Brand</h3>
+
+                <label>
+                    <input type="checkbox">
+                    Puma
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Nike
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Adidas
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Levi's
+                </label>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- PRODUCTS -->
+
+        <section class="products-section">
+
+
+            <div class="products-header">
+
+                <div>
+                    <h1>Fashion</h1>
+
+                    <p>10,000+ Products</p>
+                </div>
+
+
+                <div class="sort-box">
+
+                    <span>Sort By</span>
+
+                    <select>
+                        <option>Popularity</option>
+                        <option>Price -- Low to High</option>
+                        <option>Price -- High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT GRID -->
+
+            <div class="products-grid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/tshirt.jpg"
+                            alt="Men's Cotton T-Shirt">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Men's Cotton T-Shirt</h2>
+
+                        <p class="rating">
+                            4.3 ★
+                            <span>2,541</span>
+                        </p>
+
+                        <strong>₹499</strong>
+
+                        <del>₹1,499</del>
+
+                        <b class="discount">66% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 2 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/shirt.jpg"
+                            alt="Men's Casual Shirt">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Men's Casual Shirt</h2>
+
+                        <p class="rating">
+                            4.2 ★
+                            <span>1,845</span>
+                        </p>
+
+                        <strong>₹699</strong>
+
+                        <del>₹1,999</del>
+
+                        <b class="discount">65% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 3 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/women.jpg"
+                            alt="Women's Stylish Dress">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Women's Stylish Dress</h2>
+
+                        <p class="rating">
+                            4.4 ★
+                            <span>3,216</span>
+                        </p>
+
+                        <strong>₹899</strong>
+
+                        <del>₹2,499</del>
+
+                        <b class="discount">64% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 4 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/saree.jpg"
+                            alt="Women's Printed Saree">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Women's Printed Saree</h2>
+
+                        <p class="rating">
+                            4.5 ★
+                            <span>5,421</span>
+                        </p>
+
+                        <strong>₹1,299</strong>
+
+                        <del>₹3,999</del>
+
+                        <b class="discount">67% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 5 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/slim fit.jpg"
+                            alt="Men's Slim Fit Jeans">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Men's Slim Fit Jeans</h2>
+
+                        <p class="rating">
+                            4.3 ★
+                            <span>4,782</span>
+                        </p>
+
+                        <strong>₹999</strong>
+
+                        <del>₹2,799</del>
+
+                        <b class="discount">64% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 6 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/kutri.jpg"
+                            alt="Women's Cotton Kurti">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Women's Cotton Kurti</h2>
+
+                        <p class="rating">
+                            4.4 ★
+                            <span>6,125</span>
+                        </p>
+
+                        <strong>₹749</strong>
+
+                        <del>₹1,999</del>
+
+                        <b class="discount">62% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 7 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/sneakers.jpg"
+                            alt="Men's Casual Sneakers">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Men's Casual Sneakers</h2>
+
+                        <p class="rating">
+                            4.2 ★
+                            <span>2,964</span>
+                        </p>
+
+                        <strong>₹1,499</strong>
+
+                        <del>₹3,999</del>
+
+                        <b class="discount">62% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 8 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/handbag.jpg"
+                            alt="Women's Stylish Handbag">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Women's Stylish Handbag</h2>
+
+                        <p class="rating">
+                            4.5 ★
+                            <span>1,876</span>
+                        </p>
+
+                        <strong>₹1,199</strong>
+
+                        <del>₹3,499</del>
+
+                        <b class="discount">65% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 9 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/smart watch.jpg"
+                            alt="Analog Men's Watch">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Analog Men's Watch</h2>
+
+                        <p class="rating">
+                            4.3 ★
+                            <span>7,452</span>
+                        </p>
+
+                        <strong>₹1,799</strong>
+
+                        <del>₹4,999</del>
+
+                        <b class="discount">64% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- PRODUCT 10 -->
+
+                <a href="product.html" class="product-card">
+
+                    <div class="product-image">
+
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <img src="./source/hoodie.jpg"
+                            alt="Unisex Printed Hoodie">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h2>Unisex Printed Hoodie</h2>
+
+                        <p class="rating">
+                            4.4 ★
+                            <span>3,541</span>
+                        </p>
+
+                        <strong>₹1,099</strong>
+
+                        <del>₹2,999</del>
+
+                        <b class="discount">63% off</b>
+
+                        <p class="extra">Free delivery</p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
